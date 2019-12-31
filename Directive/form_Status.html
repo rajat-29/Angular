@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Form Status</title>
+</head>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+<body>
+
+	<form ng-app="" name="myForm">
+		<input type="email" name="myAddress" ng-model="text">
+		<h1>{{myForm.myAddress.$valid}}</h1>
+	</form>
+
+</body>
+</html>

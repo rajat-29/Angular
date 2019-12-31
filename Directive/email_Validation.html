@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Email Validation</title>
+</head>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+<body>
+
+	<form ng-app="" name="myForm">
+		<input type="email" name="myAddress" ng-model="tesxt">
+		<span ng-show="myForm.myAddress.$error.email">Not a Valid Email</span>
+	</form>
+
+</body>
+</html>

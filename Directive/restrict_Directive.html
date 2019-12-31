@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Restrict Directive</title>
+</head>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+<body>
+
+	<div ng-app="myApp">
+		<test-rajat-directive></test-rajat-directive>
+		<div test-rajat-directive>
+			
+		</div>
+	</div>
+
+<script>
+	var app = angular.module("myApp",[]);
+	app.directive("testRajatDirective",function () {
+		return {
+			restrict : "A",
+			template : "Hi"
+		};
+	});
+</script>
+
+</body>
+</html>

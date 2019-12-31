@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Custom Directive 1</title>
+</head>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+<body>
+
+	<div ng-app="myApp">
+		<p rajat-test-directive></p>
+	</div>
+<script>
+	var app = angular.module("myApp",[]);
+	app.directive("rajatTestDirective", function() {
+		return {
+			template : "Hi "
+		};
+	});
+</script>
+</body>
+</html>
+
