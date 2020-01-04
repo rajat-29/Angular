@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Curreny Filter</title>
+</head>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+<body>
+
+	<div ng-app="myApp" ng-controller="myCtrl">
+		<p>Price is {{price | currency}}</p>
+	</div>
+
+<script>
+	var app = angular.module("myApp",[]);
+	app.controller("myCtrl",function($scope) {
+		$scope.price = 70;
+	})
+</script>
+
+</body>
+</html>
